@@ -1,0 +1,180 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+    background:#F5F2EB;
+    font-family:"Inter",sans-serif;
+    color:#222;
+
+}
+
+.container{
+
+    width:min(1200px,92%);
+    margin:auto;
+
+    padding:48px 0 80px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    font-size:clamp(2rem,4vw,3.2rem);
+
+    font-weight:800;
+
+    margin:0;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-top:14px;
+
+    margin-bottom:38px;
+
+    font-size:1.05rem;
+
+}
+
+.search{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:20px 24px;
+
+    font-size:18px;
+
+    font-family:inherit;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    outline:none;
+
+}
+
+.search:focus{
+
+    box-shadow:0 16px 35px rgba(0,0,0,.12);
+
+}
+
+.filters{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin:24px 0 36px;
+
+}
+
+.filters button{
+
+    border:none;
+
+    background:white;
+
+    padding:11px 18px;
+
+    border-radius:999px;
+
+    font-family:inherit;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.filters button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.games{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+    align-items:stretch;
+}
+
+.card{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+
+    min-height:170px;
+
+    text-decoration:none;
+    color:inherit;
+    background:white;
+    border-radius:22px;
+    padding:26px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.22s;
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 38px rgba(0,0,0,.12);
+
+}
+
+.card h2{
+
+    margin:0 0 12px;
+
+    font-size:1.7rem;
+
+}
+
+.card p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.5;
+
+}
+
+@media (max-width:700px){
+
+    .container{
+
+        width:94%;
+
+        padding-top:30px;
+
+    }
+
+    .subtitle{
+
+        margin-bottom:28px;
+
+    }
+
+}
